@@ -4,6 +4,13 @@
   </div>
 
   <div class="form-group">
+        <p>추가 이미지</p>
+        <% @post_attachments.each do |p| %>
+          <%= image_tag p.avatar_url(:thumb) %>
+        <% end %>
+  </div>
+
+  <div class="form-group">
     <p>레시피 이름</p>
     <%= @post.title %>
   </div>

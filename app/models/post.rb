@@ -6,6 +6,9 @@ class Post < ApplicationRecord
   has_many :steps, dependent: :destroy
   accepts_nested_attributes_for :steps, allow_destroy: true
 
+  has_many :post_attachments
+  accepts_nested_attributes_for :post_attachments
+
   belongs_to :category
 
   mount_uploader :image, ImageUploader

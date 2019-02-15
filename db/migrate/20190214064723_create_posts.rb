@@ -5,6 +5,7 @@ class CreatePosts < ActiveRecord::Migration[5.2]
       t.integer :temperature
       t.integer :time
       t.text :description
+      t.string :image
 
       t.timestamps
     end

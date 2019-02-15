@@ -1,6 +1,10 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
 
+  # 조회수
+  impressionist actions: [:show]
+  # , unique: [:ip_address] 서비스 시 위의 코드와 결합
+
   # GET /posts
   # GET /posts.json
   def index

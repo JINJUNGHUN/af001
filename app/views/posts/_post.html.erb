@@ -1,3 +1,7 @@
+<div class="search-button">
+  <%= render 'searches/search_form', post: @posts.klass %>
+</div>
+
 <div class="container" style="text-align: right;">
   <div class="row">
     <% @posts.each do |post| %>
